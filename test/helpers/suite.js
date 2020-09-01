@@ -145,7 +145,7 @@ module.exports = function (tag, create) {
     })
   })
 
-  test(`${tag}: stream with byteOffset, length larger than hypercore size should wait`, t => {
+  test(`${tag}: stream with byteOffset, length larger than ddatabase size should wait`, t => {
     create(10, 100, (err, input, output, stream, records) => {
       t.error(err, 'create stream ok')
       let combined = Buffer.concat(records.slice(5), 500)
