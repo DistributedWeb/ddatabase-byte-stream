@@ -1,10 +1,10 @@
 const ram = require('random-access-memory')
-const hypercore = require('hypercore')
+const ddatabase = require('ddatabase')
 
 const createStream = require('../..')
 
 function createLocal (numRecords, recordSize, cb) {
-  const core = hypercore(ram)
+  const core = ddatabase(ram)
 
   const records = []
   for (let i = 0; i < numRecords; i++) {
@@ -20,7 +20,7 @@ function createLocal (numRecords, recordSize, cb) {
 }
 
 function createRemote (numRecords, recordSize, cb) {
-  const core1 = hypercore(ram, { sparse: true })
+  const core1 = ddatabase(ram, { sparse: true })
 
   const records = []
   for (let i = 0; i < numRecords; i++) {
@@ -31,7 +31,7 @@ function createRemote (numRecords, recordSize, cb) {
   core1.append(records, err => {
     if (err) return cb(err)
 
-    const core2 = hypercore(ram, core1.key, { sparse: true })
+    const core2 = ddatabase(ram, core1.key, { sparse: true })
 
     const s1 = core1.replicate(true, { live: true })
     s1.pipe(core2.replicate(false, { live: true })).pipe(s1)

@@ -1,28 +1,28 @@
 {
-  "name": "hypercore-byte-stream",
-  "version": "1.0.12",
-  "description": "A Readable stream wrapper around Hypercore that supports reading byte ranges.",
+  "name": "ddatabase-byte-stream",
+  "version": "2.0.0",
+  "description": "A Readable stream wrapper around DDatabase that supports reading byte ranges.",
   "main": "index.js",
   "scripts": {
     "test": "tape test/*.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andrewosh/hypercore-byte-stream.git"
+    "url": "git+https://github.com/andrewosh/ddatabase-byte-stream.git"
   },
   "keywords": [
-    "hypercore",
-    "dat",
-    "hyperdrive"
+    "ddatabase",
+    "dwebx",
+    "ddrive"
   ],
   "author": "Andrew Osheroff <andrewosh@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/andrewosh/hypercore-byte-stream/issues"
+    "url": "https://github.com/andrewosh/ddatabase-byte-stream/issues"
   },
-  "homepage": "https://github.com/andrewosh/hypercore-byte-stream#readme",
+  "homepage": "https://github.com/andrewosh/ddatabase-byte-stream#readme",
   "devDependencies": {
-    "hypercore": "^9.1.0",
+    "ddatabase": "^9.1.0",
     "random-access-memory": "^3.1.1",
     "tape": "^5.0.1"
   },
