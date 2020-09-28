@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/andrewosh/ddatabase-byte-stream#readme",
   "devDependencies": {
-    "ddatabase": "^9.1.0",
+    "ddatabase": "git://github.com/DistributedWeb/ddatabase.git#e867bd75ce31098ac45e3348fdd6b1d716024e93",
     "random-access-memory": "^3.1.1",
     "tape": "^5.0.1"
   },
