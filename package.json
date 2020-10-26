@@ -15,12 +15,12 @@
     "dwebx",
     "ddrive"
   ],
-  "author": "Andrew Osheroff <andrewosh@gmail.com>",
+  "author": "Peeps Labs <peepslabs@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/andrewosh/ddatabase-byte-stream/issues"
+    "url": "https://github.com/distributedweb/ddatabase-byte-stream/issues"
   },
-  "homepage": "https://github.com/andrewosh/ddatabase-byte-stream#readme",
+  "homepage": "https://github.com/distributedweb/ddatabase-byte-stream#readme",
   "devDependencies": {
     "ddatabase": "git://github.com/DistributedWeb/ddatabase.git#e867bd75ce31098ac45e3348fdd6b1d716024e93",
     "random-access-memory": "^3.1.1",
