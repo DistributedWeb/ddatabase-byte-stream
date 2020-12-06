@@ -1,13 +1,13 @@
 # ddatabase-byte-stream
 [![Build Status](https://travis-ci.com/andrewosh/ddatabase-byte-stream.svg?branch=master)](https://travis-ci.com/andrewosh/ddatabase-byte-stream)
 
-A Readable stream wrapper around DDatabase that supports reading byte ranges.
+A Readable stream wrapper around dDatabase that supports reading byte ranges.
 
 When provided with optional start/end block heuristics, this module will efficiently sync only those blocks which contain the specified range.
 
 Supports asynchronously specifying stream options, as well as the input feed, to remove the need for additional stream management modules like `duplexify`.
 
-Most of the code has been extracted from [DDrive](https://github.com/distributedweb/ddrive).
+Most of the code has been extracted from [dDrive](https://github.com/distributedweb/ddatabase).
 
 ## Usage
 The following example will return a byte stream of the entire input feed.
